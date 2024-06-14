@@ -1,0 +1,186 @@
+_type: export
+__export_format: 4
+__export_date: 2024-06-14T13:57:53.244Z
+__export_source: insomnia.desktop.app:v8.6.1
+resources:
+  - _id: req_9fc9b64b5fa64ea387daafdde3e01374
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718373145542
+    created: 1718373072998
+    url: http://localhost:3000/blog/
+    name: read_all_posts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1718373072998
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_970580b9b0c34f6a84fe013efe64a921
+    parentId: null
+    modified: 1718372762005
+    created: 1718372762005
+    name: P2
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_ffde2931f5fc40b3ae14b5d83b3fc115
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718373353844
+    created: 1718373071788
+    url: http://localhost:3000/blog/
+    name: read_single_post
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_41872387a5da4bdab3b66f5cd457ccd1
+        name: post_id
+        value: "123124"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1718373071788
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d53d42bde06f4b0ca239204b4db9b6dd
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718373346123
+    created: 1718373085889
+    url: http://localhost:3000/blog/
+    name: delete_post
+    description: ""
+    method: DELETE
+    body: {}
+    parameters:
+      - id: pair_f29dafb13fdc4b18b7e0073ad93a7b31
+        name: post_id
+        value: "0"
+        description: ""
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1718373071025.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f64cf6c384794deba49f79cea5dcb7ed
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718373439049
+    created: 1718373070263
+    url: http://localhost:3000/blog/
+    name: update_post
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 0,
+          "title": "string",
+          "content": "string"
+        }
+    parameters:
+      - id: pair_1e786fdff7a240a5b1f408fa81ea375d
+        name: post_id
+        value: ""
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1718373070263
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2566b939d5004f4c8ceae5f4f338d5f5
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718373194938
+    created: 1718372772102
+    url: http://localhost:3000/blog/
+    name: create_post
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 0,
+          "title": "string",
+          "content": "string"
+        }
+    parameters:
+      - id: pair_a8f0c1e91a864ce58964317e0752581a
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1718372772102
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_404dbc4841a1298e99c00c4b3e2a0d08673e0018
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718372762007
+    created: 1718372762007
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1718372762007
+    _type: environment
+  - _id: jar_404dbc4841a1298e99c00c4b3e2a0d08673e0018
+    parentId: wrk_970580b9b0c34f6a84fe013efe64a921
+    modified: 1718372762008
+    created: 1718372762008
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
